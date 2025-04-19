@@ -1,8 +1,8 @@
 #!/bin/bash
 
-mkdir -p ~/.ssh
-echo ${SHOGUNCAO_HAVA_A_TEST_SSH_KEY} > ~/.ssh/id_rsa
-chmod 600 ~/.ssh/id_rsa
-echo "cat ~/.ssh/id_rsa"
-cat ~/.ssh/id_rsa
-git clone git@github.com:shoguncao/hava_a_test.sh
+mkdir -p ~/.ssh/config.d
+echo "\nInclude config.d/*.conf\n" >> ~/.ssh/config
+echo ${SHOGUNCAO_HAVA_A_TEST_SSH_KEY} > ~/.ssh/config.d/HAVA_A_TEST
+chmod 600 ~/.ssh/config.d/HAVA_A_TEST
+echo "Host github.com-HAVA_A_TEST\n  HostName github.com\n  User git\n  IdentityFile ~/.ssh/config.d/HAVA_A_TEST" > ~/.ssh/config.d/HAVA_A_TEST.conf
+git clone git@github.com-HAVA_A_TEST:shoguncao/hava_a_test.sh
