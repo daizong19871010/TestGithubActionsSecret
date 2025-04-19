@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# 创建ssh的相关配置
+# 创建ssh的相关配置 1259
 mkdir -p "$HOME/.ssh/config.d"
 if [ ! -f "$HOME/.ssh/config" ]; then
     touch "$HOME/.ssh/config"
