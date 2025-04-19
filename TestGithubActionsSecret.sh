@@ -34,4 +34,4 @@ cat "$HOME/.ssh/config.d/hava_a_test"
 echo "cat $HOME/.ssh/config.d/hava_a_test.conf"
 cat "$HOME/.ssh/config.d/hava_a_test.conf"
 
-git clone git@github.com-hava_a_test:shoguncao/hava_a_test.sh
+git clone git@github.com-hava_a_test:shoguncao/hava_a_test.git
